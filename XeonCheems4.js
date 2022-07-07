@@ -8831,9 +8831,9 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
 	if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: `Pilih salah satu list menu\n`,
-                    buttonText: "Menu",
+                    title: `*Selamat ${salam} @${i.userJid.split('@')[0]}*`,
+                    description: `*Silahkan Pilih List Di Bawah Ini*\n`,
+                    buttonText: "Click Here",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
